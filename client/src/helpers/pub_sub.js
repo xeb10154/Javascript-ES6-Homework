@@ -1,4 +1,4 @@
-class PubSub {
+export default class PubSub {
 
   static publish(channel, payload){
     var event = new CustomEvent(channel, {
@@ -12,5 +12,3 @@ class PubSub {
   }
 
 };
-
-module.exports = PubSub;
